@@ -262,3 +262,14 @@ footer p:last-of-type {
     font-size: var(--font-dk-lg);
   }
 }
+@media screen and (min-width: 500px) {
+  h2 {
+    font-size: var(--font-dk-lg);
+  }
+  .intro {    
+    width: 90%;    
+  }  
+  .ingredients {
+    width: 50%;
+  }
+}
