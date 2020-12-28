@@ -8,6 +8,7 @@
   --gray-200: #BDBDBD; 
   --gray-300: #4F4F4F;
   --gray-400: #333333;
+  --gray-500: #828282;
 
   --orange: #F2994A;
 
@@ -28,23 +29,25 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 main {
-  margin-top: 20px;
+  width: 95%;
+  margin: 20px auto;
 }
-header {
-
-}
-header p {
-  margin: 10px;
-  font-size: var(--font-dk-lg);
-  font-family: 'Playfair Display', serif ;
+h2, h3 {  
   font-weight: 700;
+  font-family: 'Playfair Display', serif ; 
 }
-.material-icons:nth-child(1) {
-  color: var(--gray-100);
-  transform: rotate(90deg);
+h2 {
+  font-size: var(--font-dk-lg);
 }
-.material-icons:nth-child(2) {
+h3 {
+  font-size: var(--font-dk-md);
+}
+.material-icons {
+  margin-right: 5px;
   color: var(--orange);
+}
+.material-icons.md-14 {
+  font-size: 14px;
 }
 .intro {
   margin: 0 auto;
@@ -57,18 +60,124 @@ header p {
 }
 .intro div {
   color: var(--gray-300);
-  border-radius: 12px;
   font-weight: 500;
   font-style: italic;
   font-size: var(--font-mb-lg1);
   margin-left: 5px;
   margin-bottom: 15px;
+  line-height: 14px;
 }
 .img-container {
   margin: 0 auto;
   width: 100%;
 }
 .img-container img {
+  border-radius: 12px;
   width: 100%;
   margin-bottom: 15px;
+}
+.img-footer {
+  display: flex;
+  align-items: center;
+}
+.title {
+  text-transform: uppercase;
+  color: var(--gray-200);
+  font-weight: 700;
+  font-size: 8px;
+}
+.subtitle {
+  font-weight: 500;
+  color: var(--orange);
+  font-size: var(--font-mb-md);
+}
+.prep-time {
+  margin: 15px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.prep-time .material-icons {
+  color: var(--gray-300);
+}
+.prep-time > div {
+  display: flex;
+  align-items: center;
+}
+.prep-time .subtitle {
+  color: var(--gray-400);
+}
+.ingredients p {
+  margin-left: 0;
+}
+.ingredients .subtitle {
+  font-size: var(--font-mb-lg2);
+  font-family: 'Playfair Display', serif ;
+  font-weight: 400;
+  font-style: italic;
+  color: var(--gray-400);
+  margin: 10px 0;
+}
+.ingredients article {
+  margin-bottom: 35px;
+}
+.checkbox-group {
+  display: flex;
+  color: var(--gray-400);
+}
+.checkbox-group input[type="checkbox"] {
+  width: 21px;
+  height: 21px;
+  padding: 0;
+  appearance: none;
+  border-radius: 4px;
+  border: 1px solid var(--gray-500);
+}
+.checkbox-group span {
+  width: 90%;
+  margin-left: 8px;
+  font-style: var(--font-dk-sm);
+  font-weight: 400;
+  line-height: 25px;
+}
+.checkbox-group em {
+  font-weight: 500;
+}
+.instruction-step {
+  display: flex;
+  margin-bottom: 15px;
+}
+.instruction-step span {
+  width: 80%;
+  margin-left: 15px;
+  font-size: var(--font-mb-lg2);
+  line-height: 24px;
+}
+.instructions .number {
+  width: 36px;
+  height: 36px;
+  color: white;
+  background-color: var(--orange);
+  font-family: 'Playfair Display', serif ;
+  font-weight: 700;
+  font-size: var(--font-dk-lg);
+  line-height: 30px;
+  text-align: center;
+  border-radius: 6px;
+}
+footer {
+  font-size: var(--font-mb-lg1);
+  color: var(--gray-200);
+}
+footer a {
+  text-decoration: none;
+  color: var(--gray-500);
+}
+footer a:hover {
+  font-weight: 500;
+}
+footer p:first-of-type {
+  margin: 4rem 0;
+}
+footer p:last-of-type {
+  text-align: center;
 }
